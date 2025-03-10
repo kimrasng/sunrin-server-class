@@ -47,11 +47,21 @@ def super(num):
 
 def is_big_10(num):
     return num > 10
+#
+# num_list = [30, 20, 50, 14, 8, 26]
+#
+# output_map = map(super, num_list)
+# print("map:", list(output_map))
+#
+# output_filter = filter(is_big_10, num_list)
+# print("filter:", list(output_filter))
 
-num_list = [30, 20, 50, 14, 8, 26]
+# call back 함수를 이용한 대표적인 예시
+# list(map(int, input().split()))
 
-output_map = map(super, num_list)
-print("map:", list(output_map))
+# 연습문제
+is_big_10_lamda = lambda n: n > 10
+super_lambda = lambda n: n * n
 
-output_filter = filter(is_big_10, num_list)
-print("filter:", list(output_filter))
+# print(is_big_10_lamda(5))
+# print(super_lambda(5))
