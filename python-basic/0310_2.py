@@ -54,3 +54,4 @@ output_map = map(super, num_list)
 print("map:", list(output_map))
 
 output_filter = filter(is_big_10, num_list)
+print("filter:", list(output_filter))
